@@ -1,0 +1,204 @@
+#json-monitor-overlay {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    max-height: 80vh;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    z-index: 2147483647;
+    color: #fff;
+    overflow: hidden;
+    resize: both;
+    min-width: 300px;
+    min-height: 200px;
+}
+.pre#response-content {
+    font-size: 20px;
+}
+
+
+.json-monitor-header {
+    background: #2d2d2d;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    user-select: none;
+    border-bottom: 1px solid #333;
+}
+
+.json-monitor-title {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.json-monitor-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.json-monitor-controls button {
+    background: #444;
+    border: none;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: background 0.2s;
+}
+
+.json-monitor-controls button:hover {
+    background: #555;
+}
+
+.json-monitor-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+}
+
+.json-monitor-stats {
+    padding: 8px 12px;
+    background: #252525;
+    border-bottom: 1px solid #333;
+    font-size: 11px;
+    color: #ccc;
+}
+
+.json-monitor-list {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.json-monitor-empty {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.json-monitor-item {
+    border-bottom: 1px solid #333;
+    transition: background 0.2s;
+}
+
+.json-monitor-item:hover {
+    background: #2a2a2a;
+}
+
+.json-monitor-item-header {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.json-monitor-method {
+    background: #4CAF50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    min-width: 35px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.json-monitor-method[data-method="POST"] {
+    background: #FF9800;
+}
+
+.json-monitor-method[data-method="PUT"] {
+    background: #2196F3;
+}
+
+.json-monitor-method[data-method="DELETE"] {
+    background: #f44336;
+}
+
+.json-monitor-role-id {
+    background: #2196F3;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: monospace;
+}
+
+.json-monitor-url {
+    flex: 1;
+    color: #61dafb;
+    font-family: monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.json-monitor-time {
+    color: #999;
+    font-size: 10px;
+    min-width: 60px;
+}
+
+.json-monitor-size {
+    color: #ffa726;
+    font-size: 10px;
+    min-width: 40px;
+    text-align: right;
+}
+
+.json-monitor-json {
+    background: #0f0f0f;
+    border-top: 1px solid #333;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.json-monitor-json pre {
+    margin: 0;
+    padding: 12px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #f8f8f2;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+.json-monitor-json pre {
+    color: #f8f8f2;
+}
+
+
+.json-monitor-list::-webkit-scrollbar,
+.json-monitor-json::-webkit-scrollbar {
+    width: 6px;
+}
+
+.json-monitor-list::-webkit-scrollbar-track,
+.json-monitor-json::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.json-monitor-list::-webkit-scrollbar-thumb,
+.json-monitor-json::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+
+.json-monitor-list::-webkit-scrollbar-thumb:hover,
+.json-monitor-json::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

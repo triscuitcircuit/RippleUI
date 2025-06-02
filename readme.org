@@ -1,0 +1,11 @@
+* RippleUI
+A UI Addon for browsers to display hidden information from RippleMatches API
+#+CAPTION: RippleUI display
+ #+attr_latex: :width 400px
+[[file:assets/RippleUI.png]]
+** About
+RippleMatch is a job search company. Within responses to their ~GET~ requests to their backend, the responses return information not displayed to the end user.
+This addon allows a user of RippleMatch to see information not displayed.
+#+attr_latex: :width 300px
+#+CAPTION: Response from the backend to the frontend on Ripplematch
+[[file:assets/response.png]]

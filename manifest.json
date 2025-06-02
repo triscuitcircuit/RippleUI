@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "RippleUI",
+  "version": "1.0",
+  "description": "Interface overlay for RippleMatch",
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [{
+    "matches": ["https://app.ripplematch.com/*"],
+    "js": ["content.js"],
+    "css": ["overlay.css"],
+    "run_at": "document_start"
+  }],
+
+  "web_accessible_resources": [
+    "injected.js"
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle JSON Monitor"
+  }
+}
