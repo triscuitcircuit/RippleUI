@@ -9,3 +9,11 @@ This addon allows a user of RippleMatch to see information not displayed.
 #+attr_latex: :width 300px
 #+CAPTION: Response from the backend to the frontend on Ripplematch
 [[file:assets/response.png]]
+** Installation Instructions
+   - Download the ~Git~ repository with ~git clone https://github.com/triscuitcircuit/RippleUI.git~ (or as a Zip)
+   - Go to ~about:debugging#/runtime/this-firefox~ in Firefox (Chrome coming soon)
+     - Select "Load Temporary Add-on" and select any file from the downloaded code
+   - Load into Ripplematch's feed. Recruiter information should be visible
+** Contributing guidelines
+   All contributions are welcome. Please make sure it adds to the project goal as a whole, that is: transparency and accountability for hiring companies 
+   - Create a pull request with a summary of the appropriate changes.
